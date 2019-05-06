@@ -23,8 +23,7 @@ docker run -ti --rm \
 -v /dev/shm:/dev/shm \
 -v /etc/machine-id:/etc/machine-id \
 -v /run/user/$uid/pulse:/run/user/$uid/pulse \
--v ~/.pulse:/home/$dockerUsername/.pulse firefox/18.04:5
--v /var/lib/dbus:/var/lib/dbus \
+-v ~/.pulse:/home/$dockerUsername/.pulse firefox/18.04:6 \
 -v ~/.pulse:/home/$dockerUsername/.pulse \
 --ipc=host \
 --env PULSE_SERVER=unix:/tmp/pulseaudio.socket \
